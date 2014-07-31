@@ -86,6 +86,7 @@
 
     // initial setup of chart when data is first made available
     function initializeCharts() {
+        hideSpinner();
 
         // define the parts of the axis that aren't dependent on width or height
         xScale = d3.time.scale()
@@ -324,6 +325,7 @@
 
     // called for initial update and updates for resize
     function updateChart(init) {
+        showSpinner();
 
         // get current data range
         var dataRange = d3.extent(data, dateFn);
@@ -621,6 +623,8 @@
         // update x axis domain
         context.select('.x')
             .call(xAxis2);
+
+        hideSpinner();
     }
 
     // look for resize but use timer to only call the update script when a resize stops

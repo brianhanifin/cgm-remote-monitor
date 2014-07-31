@@ -315,8 +315,4 @@ $(function() {
 			closeToolbar();
 		}
 	}
-
-	setTimeout(function() {
-		hideSpinner();
-	}, 1500);
 });
