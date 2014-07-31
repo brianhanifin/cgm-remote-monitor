@@ -152,6 +152,13 @@ function openDrawer()  {
 	$("#drawer").animate({right: "0"}, 300);
 }
 
+function hideSpinner() {
+	$("#spinner").fadeOut(500);
+}
+function showSpinner() {
+	$("#spinner").show();
+}
+
 
 function closeNotification() {
 	var notify = $("#notification");
@@ -309,6 +316,5 @@ $(function() {
 		}
 	}
 
-	//setTimeout(function(){$("#loader").fadeOut(1500)}, 2000);
-	$("#loader").fadeOut(1500);
+	hideSpinner();
 });

@@ -10,7 +10,16 @@ $(function() {
 
 	$(".glyphToggle").on("click", function(){
 		var newGlyph = $(this).find("i").attr("class");
-		$("#drawerToggle").find("i").prop("class", newGlyph);
+		$("#drawerToggle").find("i").addClass(newGlyph);
+		event.preventDefault();
+	});
+
+	$(".spinToggle").on("click", function(){
+		showSpinner();
+		var newGlyph = $(this).find("i").attr("class");
+		$("#spinner").find("i").removeClass();
+		$("#spinner").find("i").addClass(newGlyph + " animate-spin");
+		setTimeout(function() { hideSpinner() }, 2000);
 		event.preventDefault();
 	});
 

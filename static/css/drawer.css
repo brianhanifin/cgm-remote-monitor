@@ -87,6 +87,22 @@ h1, legend,
     height: 44px;
 }
 
+#spinner {
+    background: #333;
+    float: left;
+    font-size: 0.75em;
+    line-height: 44px;
+    padding: 0;
+    height: 44px;
+    width: 44px;
+    opacity: 1;
+    vertical-align: middle;
+}
+#spinner i {
+    color: #fff;
+    font-size: 2em;
+}
+
 #toolbar h1 {
     color: #ccc;
     font-size: 16px;

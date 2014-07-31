@@ -7,10 +7,12 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css" />
         <link rel="stylesheet" type="text/css" href="/css/dropdown.css" />
         <link rel="stylesheet" type="text/css" href="/css/drawer.css" />
+        <link rel="stylesheet" type="text/css" href="/glyphs/css/animation.css" />
         <link rel="stylesheet" type="text/css" href="/bower_components/tipsy-jmalonzo/src/stylesheets/tipsy.css" />
     </head>
     <body>
         <div id="toolbar">
+            <div id="spinner"><i class="icon-spin3 animate-spin"></i></div>
             <div id="buttonbar">
                 <div style="visibility:hidden" id="battery" class="tip" original-title="Uploader Battery 75%"><i class="icon-battery-75"></i></div>
                 <a id="testAlarms" class="tip" original-title="Alarm Test / Smartphone Enable" href="#"><i class="icon-volume"></i></a>
@@ -88,6 +90,12 @@
                 <fieldset class="experiments">
                     <legend>Experiments</legend>
                     <div style="text-align:center; vertical-align:middle;">
+                        <b>Loading spinners</b><br />
+                        <a class="spinToggle tip" href="#" original-title="icon-spin1"><i class="icon-spin1"></i></a>
+                        <a class="spinToggle tip" href="#" original-title="icon-spin2"><i class="icon-spin2"></i></a>
+                        <a class="spinToggle tip" href="#" original-title="icon-spin3"><i class="icon-spin3"></i></a>
+                        <a class="spinToggle tip" href="#" original-title="icon-spin4"><i class="icon-spin4"></i></a>
+                        <br />
                         <b>Hamburger?</b><br />
                         <a class="glyphToggle tip" href="#" original-title="icon-menu"><i class="icon-menu"></i></a>
                         <a class="glyphToggle tip" href="#" original-title="icon-cog"><i class="icon-cog"></i></a>
@@ -105,10 +113,6 @@
                     </div>
                 </fieldset>
             </form>
-        </div>
-
-        <div id="loader">
-            <img src="/images/large.png" style="width:192px" />
         </div>
 
         <div class="audio alarms">
