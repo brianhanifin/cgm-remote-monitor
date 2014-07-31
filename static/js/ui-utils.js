@@ -316,5 +316,7 @@ $(function() {
 		}
 	}
 
-	hideSpinner();
+	setTimeout(function() {
+		hideSpinner();
+	}, 1500);
 });
